@@ -5,7 +5,7 @@ import numpy as np
 import pufferlib.environment
 import pufferlib.exceptions
 import pufferlib.emulation
-print('hi')
+
 
 class PufferEnvWrapper(pufferlib.environment.PufferEnv):
     def __init__(self, env_creator: callable = None, env_args: list = [],
