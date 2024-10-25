@@ -372,7 +372,7 @@ class Multiprocessing:
                 target=_worker_process,
                 args=(env_creators[start:end], env_args[start:end],
                     env_kwargs[start:end], obs_shape, obs_dtype,
-                    atn_shape, atn_dtype, envs_per_worker, driver_env.num_agents,
+                    atn_shape, atn_dtype, envs_per_worker, agents_per_worker,
                     num_workers, i, w_send_pipes[i], w_recv_pipes[i],
                     self.shm, is_native)
             )
